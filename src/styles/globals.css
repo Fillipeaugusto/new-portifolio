@@ -1,0 +1,161 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+	padding: 0;
+	margin: 0;
+	font-family: 'Inter', sans-serif;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+/*
+ * Base styles
+ */
+
+.scrolled {
+}
+
+.work-sans {
+	font-family: 'Work Sans', sans-serif;
+}
+
+#menu-toggle:checked + #menu {
+	display: block;
+}
+
+.hover\:grow {
+	transition: all 0.3s;
+	transform: scale(1);
+}
+
+.hover\:grow:hover {
+	transform: scale(1.02);
+}
+
+.carousel-open:checked + .carousel-item {
+	position: static;
+	opacity: 100;
+}
+
+.carousel-item {
+	-webkit-transition: opacity 0.6s ease-out;
+	transition: opacity 0.6s ease-out;
+}
+
+#carousel-1:checked ~ .control-1,
+#carousel-2:checked ~ .control-2,
+#carousel-3:checked ~ .control-3 {
+	display: block;
+}
+
+.carousel-indicators {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	bottom: 2%;
+	left: 0;
+	right: 0;
+	text-align: center;
+	z-index: 10;
+}
+
+#carousel-1:checked
+	~ .control-1
+	~ .carousel-indicators
+	li:nth-child(1)
+	.carousel-bullet,
+#carousel-2:checked
+	~ .control-2
+	~ .carousel-indicators
+	li:nth-child(2)
+	.carousel-bullet,
+#carousel-3:checked
+	~ .control-3
+	~ .carousel-indicators
+	li:nth-child(3)
+	.carousel-bullet {
+	color: #000;
+	/*Set to match the Tailwind colour you want the active one to be */
+}
+
+.images button {
+	border: 0;
+	max-height: 88px;
+	background: white;
+	cursor: pointer;
+	border-radius: 8px;
+	overflow: hidden;
+	outline: none;
+	margin: '20px';
+	opacity: 0.6;
+}
+
+.images button.active {
+	opacity: 1;
+	box-shadow: '-2px 6px 22px -3px rgba(0,0,0,0.75)';
+}
+
+.images button img {
+	width: 100%;
+	/* height: 77px; */
+	object-fit: cover;
+}
+
+.input-block .button-select {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.input-block .button-select button {
+	height: 64px;
+	background: #f5f8fa;
+	border: 1px solid #d3e2e5;
+	color: #5c8599;
+	cursor: pointer;
+}
+
+.input-block .button-select button.active {
+	background: #edfff6;
+	border: 1px solid #a1e9c5;
+	color: #37c77f;
+}
+.input-block .button-select button:first-child {
+	border-radius: 20px 0px 0px 20px;
+}
+
+.input-block .button-select button:last-child {
+	border-radius: 0 20px 20px 0;
+}
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+	scrollbar-width: thin;
+	scrollbar-color: #707070 #ffffff;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+	width: 11px;
+}
+
+*::-webkit-scrollbar-track {
+	background: #ffffff;
+}
+
+*::-webkit-scrollbar-thumb {
+	background-color: #707070;
+	border-radius: 7px;
+	border: 3px solid #ffffff;
+}
