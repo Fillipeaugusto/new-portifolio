@@ -1,5 +1,7 @@
+/* eslint-disable @next/next/no-sync-scripts */
 import { AppProps } from 'next/app';
 import Carousel from '../components/Carrousel';
+import Footer from '../components/Footer';
 
 import Header from '../components/Header';
 import Testando from '../components/Testando';
@@ -16,6 +18,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 				{/* <Teste /> */}
 			</div>
 			<Component {...pageProps} />
+			<Footer />
 		</>
 	);
 }

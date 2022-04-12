@@ -19,19 +19,6 @@ interface Project {
 export const Projects: Project[] = [
 	{
 		id: 1,
-		name: 'Dev Finances',
-		description:
-			'O Dev.Finances é um projeto de controle de contas pessoais com controle de recebimentos e pagamentos, assim como calculo dos totais.',
-		cover: {
-			src: 'https://dev.fillipeaugusto.vercel.app/images/images_dev_finances/inicio.png',
-			alt: 'Project 1',
-		},
-		technology: 'React Js',
-		features: [{ name: 'Origin', description: 'Designed by Good Goods, Inc.' }],
-		slug: 'dev-finances',
-	},
-	{
-		id: 2,
 		name: 'Ig news',
 		description:
 			'O Ig.news é uma plataforma de assinatura para conteúdos em texto dedicada para desenvolvedores, o objetivo da plataforma é gerar conteúdos em texto e coverns para a comunidade de desenvolvedores.',
@@ -43,6 +30,20 @@ export const Projects: Project[] = [
 		slug: 'ig-news',
 	},
 	{
+		id: 2,
+		name: 'Dev Finances',
+		description:
+			'O Dev.Finances é um projeto de controle de contas pessoais com controle de recebimentos e pagamentos, assim como calculo dos totais.',
+		cover: {
+			src: 'https://dev.fillipeaugusto.vercel.app/images/images_dev_finances/inicio.png',
+			alt: 'Project 1',
+		},
+		technology: 'React Js',
+		features: [{ name: 'Origin', description: 'Designed by Good Goods, Inc.' }],
+		slug: 'dev-finances',
+	},
+
+	{
 		id: 3,
 		name: 'Let me ask',
 		description:
@@ -52,7 +53,7 @@ export const Projects: Project[] = [
 			alt: 'Project 3',
 		},
 		technology: 'React Js',
-		slug: 'dev-finances',
+		slug: 'let-me-ask',
 	},
 	{
 		id: 4,

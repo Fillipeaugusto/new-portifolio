@@ -1,181 +1,37 @@
+/* eslint-disable @next/next/no-img-element */
 import React from 'react';
 
 export default function Teste() {
 	return (
-		<div className="bg-white text-gray-600 work-sans leading-normal text-base tracking-normal">
-			<div
-				className="carousel relative container mx-auto"
-				style={{ maxWidth: '1600px' }}
-			>
-				<div className="carousel-inner relative overflow-hidden w-full">
-					<input
-						className="carousel-open"
-						type="radio"
-						id="carousel-1"
-						name="carousel"
-						aria-hidden="true"
-						hidden
-						checked
-					/>
-					<div
-						className="carousel-item absolute opacity-0"
-						style={{ height: '50vh' }}
-					>
-						<div
-							className="block h-full w-full mx-auto flex pt-6 md:pt-0 md:items-center bg-cover bg-right"
-							style={{
-								backgroundImage:
-									"url('https://images.unsplash.com/photo-1519327232521-1ea2c736d34d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1600&q=80')",
-							}}
-						>
-							<div className="container mx-auto">
-								<div className="flex flex-col w-full lg:w-1/2 md:ml-16 items-center md:items-start px-6 tracking-wide">
-									<p className="text-black text-2xl my-4">
-										Stripy Zig Zag Jigsaw Pillow and Duvet Set
-									</p>
-									<a
-										className="text-xl inline-block no-underline border-b border-gray-600 leading-relaxed hover:text-black hover:border-black"
-										href="#"
-									>
-										view product
-									</a>
+		<div>
+			<section className="pb-16 2xl:pb-20 overflow-hidden">
+				<div className="relative bg-blueGray-100 rounded-b-10xl">
+					<div className="container px-4 mx-auto">
+						<div className="flex flex-wrap items-center -mx-4 pt-16 pb-20">
+							<div className="w-full lg:w-1/2 px-4 mb-24 lg:mb-0">
+								<span className="block mb-9 font-medium tracking-widest uppercase text-sm text-gray-300">
+									Front End Dev
+								</span>
+								<h1 className="max-w-xl mb-16 font-heading font-medium text-9xl md:text-10xl xl:text-13xl leading-none">
+									<span>Fillipe Augusto</span>
+								</h1>
+								<p className="mb-16 lg:mb-24 text-xl text-darkBlueGray-400 leading-snug">
+									Fusce sem lectus, pretium at pellentesque a sagittis non.
+								</p>
+							</div>
+							<div className="w-full lg:w-1/2 px-4">
+								<div className="relative max-w-sm xl:max-w-none mx-auto">
+									<img
+										className="relative xl:max-w-max z-10"
+										src="https://avatars.githubusercontent.com/u/55332682?s=400&u=b7c344b960fec4a099a5cca57fbca6f1a7e172ee&v=4"
+										alt=""
+									/>
 								</div>
 							</div>
 						</div>
 					</div>
-					<label
-						htmlFor="carousel-3"
-						className="prev control-1 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-gray-900 leading-tight text-center z-10 inset-y-0 left-0 my-auto"
-					>
-						‹
-					</label>
-					<label
-						htmlFor="carousel-2"
-						className="next control-1 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-gray-900 leading-tight text-center z-10 inset-y-0 right-0 my-auto"
-					>
-						›
-					</label>
-
-					<input
-						className="carousel-open"
-						type="radio"
-						id="carousel-2"
-						name="carousel"
-						aria-hidden="true"
-						hidden
-					/>
-					<div
-						className="carousel-item absolute opacity-0 bg-cover bg-right"
-						style={{ height: '50vh' }}
-					>
-						<div
-							className="block h-full w-full mx-auto flex pt-6 md:pt-0 md:items-center bg-cover bg-right"
-							style={{
-								backgroundImage:
-									"url('https://images.unsplash.com/photo-1649543816266-1859ada53909?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80')",
-							}}
-						>
-							<div className="container mx-auto">
-								<div className="flex flex-col w-full lg:w-1/2 md:ml-16 items-center md:items-start px-6 tracking-wide">
-									<p className="text-black text-2xl my-4">Real Bamboo Wall Clock</p>
-									<a
-										className="text-xl inline-block no-underline border-b border-gray-600 leading-relaxed hover:text-black hover:border-black"
-										href="#"
-									>
-										view product
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<label
-						htmlFor="carousel-1"
-						className="prev control-2 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-gray-900  leading-tight text-center z-10 inset-y-0 left-0 my-auto"
-					>
-						‹
-					</label>
-					<label
-						htmlFor="carousel-3"
-						className="next control-2 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-gray-900  leading-tight text-center z-10 inset-y-0 right-0 my-auto"
-					>
-						›
-					</label>
-
-					<input
-						className="carousel-open"
-						type="radio"
-						id="carousel-3"
-						name="carousel"
-						aria-hidden="true"
-						hidden
-					/>
-					<div
-						className="carousel-item absolute opacity-0"
-						style={{ height: '50vh' }}
-					>
-						<div
-							className="block h-full w-full mx-auto flex pt-6 md:pt-0 md:items-center bg-cover bg-bottom"
-							style={{
-								backgroundImage:
-									"url('https://images.unsplash.com/photo-1649530492582-f519a3d86cf8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80')",
-							}}
-						>
-							<div className="container mx-auto">
-								<div className="flex flex-col w-full lg:w-1/2 md:ml-16 items-center md:items-start px-6 tracking-wide">
-									<p className="text-black text-2xl my-4">
-										Brown and blue hardbound book
-									</p>
-									<a
-										className="text-xl inline-block no-underline border-b border-gray-600 leading-relaxed hover:text-black hover:border-black"
-										href="#"
-									>
-										view product
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<label
-						htmlFor="carousel-2"
-						className="prev control-3 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-gray-900  leading-tight text-center z-10 inset-y-0 left-0 my-auto"
-					>
-						‹
-					</label>
-					<label
-						htmlFor="carousel-1"
-						className="next control-3 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-gray-900  leading-tight text-center z-10 inset-y-0 right-0 my-auto"
-					>
-						›
-					</label>
-
-					<ol className="carousel-indicators">
-						<li className="inline-block mr-3">
-							<label
-								htmlFor="carousel-1"
-								className="carousel-bullet cursor-pointer block text-4xl text-gray-400 hover:text-gray-900"
-							>
-								•
-							</label>
-						</li>
-						<li className="inline-block mr-3">
-							<label
-								htmlFor="carousel-2"
-								className="carousel-bullet cursor-pointer block text-4xl text-gray-400 hover:text-gray-900"
-							>
-								•
-							</label>
-						</li>
-						<li className="inline-block mr-3">
-							<label
-								htmlFor="carousel-3"
-								className="carousel-bullet cursor-pointer block text-4xl text-gray-400 hover:text-gray-900"
-							>
-								•
-							</label>
-						</li>
-					</ol>
 				</div>
-			</div>
+			</section>
 		</div>
 	);
 }
