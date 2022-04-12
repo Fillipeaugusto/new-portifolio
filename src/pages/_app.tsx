@@ -16,6 +16,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 			<div>
 				{/* <Carousel /> */}
 				{/* <Teste /> */}
+				<Testando />
 			</div>
 			<Component {...pageProps} />
 			<Footer />

@@ -5,10 +5,10 @@ export default function MyExperience() {
 	return (
 		<div className="align-center flex justify-center">
 			<div className="container py-16 md:py-20" id="work">
-				<h2 className="text-center font-header text-4xl font-semibold uppercase text-primary sm:text-5xl lg:text-6xl">
+				<h2 className="text-center font-header text-4xl font-semibold uppercase text-primary sm:text-5xl lg:text-5xl">
 					Minha <span className="text-indigo-500">experiência</span>
 				</h2>
-				<h3 className="pt-6 text-center font-header text-xl font-medium text-black sm:text-2xl lg:text-3xl">
+				<h3 className="pt-6 text-center font-header text-xl font-medium text-black sm:text-2xl lg:text-2xl">
 					Aqui estão as empresas por onde passei
 				</h3>
 

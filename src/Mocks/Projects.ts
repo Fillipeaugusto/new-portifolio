@@ -26,7 +26,7 @@ export const Projects: Project[] = [
 			src: 'https://dev.fillipeaugusto.vercel.app/images/images_ig_news/Home.png',
 			alt: 'Project 2',
 		},
-		technology: 'React Js',
+		technology: 'Next Js',
 		slug: 'ig-news',
 	},
 	{
@@ -38,7 +38,7 @@ export const Projects: Project[] = [
 			src: 'https://dev.fillipeaugusto.vercel.app/images/images_dev_finances/inicio.png',
 			alt: 'Project 1',
 		},
-		technology: 'React Js',
+		technology: 'Html',
 		features: [{ name: 'Origin', description: 'Designed by Good Goods, Inc.' }],
 		slug: 'dev-finances',
 	},
@@ -52,7 +52,7 @@ export const Projects: Project[] = [
 			src: 'https://dev.fillipeaugusto.vercel.app/images/images_letmeask/P%C3%A1gina_inicial.svg',
 			alt: 'Project 3',
 		},
-		technology: 'React Js',
+		technology: 'Next Js',
 		slug: 'let-me-ask',
 	},
 	{
@@ -64,7 +64,7 @@ export const Projects: Project[] = [
 			src: 'https://dev.fillipeaugusto.vercel.app/images/images_moveIt/Home.png',
 			alt: 'Project 3',
 		},
-		technology: 'React Js',
+		technology: 'Next Js',
 		slug: 'dev-finances',
 	},
 	{

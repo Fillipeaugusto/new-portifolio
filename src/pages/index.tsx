@@ -5,6 +5,7 @@ import ProjectCard from '../components/ProjectCard';
 import { Projects } from '../Mocks/Projects';
 import { Me } from '../Mocks/Me';
 import MyExperience from '../components/MyExperience';
+import Link from 'next/link';
 export default function Home() {
 	const bigData = Projects[0];
 	const newProjectData = Projects.slice(1);
@@ -13,7 +14,7 @@ export default function Home() {
 		<div className="bg-white text-gray-600 work-sans leading-normal text-base tracking-normal">
 			{/* new-cards  */}
 
-			<section className="py-20 bg-gray-50">
+			{/* <section className="py-20 bg-gray-50">
 				<div className="container items-center max-w-6xl px-4 px-10 mx-auto sm:px-20 md:px-32 lg:px-16">
 					<div className="flex flex-wrap items-center -mx-3">
 						<div className="order-1 w-full px-3 lg:w-1/2 lg:order-0">
@@ -94,9 +95,49 @@ export default function Home() {
 						</div>
 					</div>
 				</div>
-			</section>
+			</section> */}
 			<MyExperience />
-			<section className="bg-white">
+			<div className="mb-40 mt-20 flex justify-center items-center ">
+				<div className="grid grid-cols-6 max-w-5xl mx-8 rounded-xl bg-blue-500 shadow-lg    hover:transition-all delay-200 hover:shadow-blue-500/90">
+					<div className="col-span-4">
+						<h2 className="font-bold text-3xl text-white ml-10 mt-8">
+							Deseja ver meus projetos ?
+						</h2>
+
+						<p className="font-light text-white text-sm ml-10 mt-5">
+							Clique no botão abaixo para ver todos os projetos que eu realizei.
+						</p>
+						<Link href="/all-projects">
+							<button className="text-white font-semibold ml-10 mt-5 mb-8 group ">
+								Meus projetos
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									className="inline-block h-6 w-6 group-hover:translate-x-2 transition delay-100 transition-200"
+									fill="none"
+									viewBox="0 0 24 24"
+									stroke="currentColor"
+								>
+									<path
+										strokeLinecap="round"
+										strokeLinejoin="round"
+										strokeWidth="2"
+										d="M17 8l4 4m0 0l-4 4m4-4H3"
+									/>
+								</svg>
+							</button>
+						</Link>
+					</div>
+
+					<div className="col-span-2 relative">
+						<img
+							className="absolute bottom-0 right-0 img-coding"
+							src="/assets/programming.svg"
+							alt="programming"
+						/>
+					</div>
+				</div>
+			</div>
+			{/* <section className="bg-white">
 				<div className="w-full px-5 py-6 mx-auto space-y-5 sm:py-8 md:py-12 sm:space-y-8 md:space-y-16 max-w-7xl">
 					<div className="flex flex-col items-center sm:px-5 md:flex-row">
 						<div className="w-full md:w-1/2">
@@ -162,18 +203,12 @@ export default function Home() {
 										{project.name}
 									</h2>
 									<p className="text-sm text-gray-500">{project.description}</p>
-									<p className="pt-2 text-xs font-medium">
-										<a href="#_" className="mr-1 underline">
-											Fillipe Augusto
-										</a>{' '}
-										· <span className="mx-1">April 10, 2021</span>
-									</p>
 								</div>
 							);
 						})}
 					</div>
 				</div>
-			</section>
+			</section> */}
 
 			{/* final new card */}
 			{/* <section className="bg-white py-8">
