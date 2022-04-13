@@ -8,8 +8,6 @@ import Link from 'next/link';
 const navigation = [
 	{ name: 'Dashboard', href: '/', current: false },
 	{ name: 'Projetos', href: '/all-projects', current: false },
-	{ name: 'Projects', href: '#', current: false },
-	{ name: 'Calendar', href: '#', current: false },
 ];
 
 function classNames(...classes) {
@@ -18,7 +16,7 @@ function classNames(...classes) {
 
 export default function Header() {
 	return (
-		<Disclosure as="nav" className="bg-gray-800">
+		<Disclosure as="nav" className="bg-zinc-800">
 			{({ open }) => (
 				<>
 					<div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 ">
@@ -38,12 +36,12 @@ export default function Header() {
 								<div className="flex-shrink-0 flex items-center">
 									<img
 										className="block lg:hidden h-8 w-auto"
-										src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg"
+										src="/assets/FA.svg"
 										alt="Workflow"
 									/>
 									<img
 										className="hidden lg:block h-8 w-auto"
-										src="https://tailwindui.com/img/logos/workflow-logo-indigo-500-mark-white-text.svg"
+										src="/assets/logo.svg"
 										alt="Workflow"
 									/>
 								</div>
@@ -54,8 +52,8 @@ export default function Header() {
 												<a
 													className={classNames(
 														item.current
-															? 'bg-gray-900 text-white'
-															: 'text-gray-300 hover:bg-gray-700 hover:text-white',
+															? 'bg-zinc-900 text-white'
+															: 'text-gray-300 hover:bg-zinc-700 hover:text-white',
 														'px-3 py-2 rounded-md text-sm font-medium'
 													)}
 													aria-current={item.current ? 'page' : undefined}
@@ -79,8 +77,8 @@ export default function Header() {
 									href={item.href}
 									className={classNames(
 										item.current
-											? 'bg-gray-900 text-white'
-											: 'text-gray-300 hover:bg-gray-700 hover:text-white',
+											? 'bg-zinc-900 text-white'
+											: 'text-gray-300 hover:bg-zinc-700 hover:text-white',
 										'block px-3 py-2 rounded-md text-base font-medium'
 									)}
 									aria-current={item.current ? 'page' : undefined}

@@ -20,7 +20,7 @@ interface Data {
 
 export default function ProjectCard({ project }: Data) {
 	return (
-		<div className="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col">
+		<div className="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col ">
 			<a href={`http://localhost:3000/projects/${project.slug}`}>
 				<img
 					className="hover:grow hover:shadow-lg"

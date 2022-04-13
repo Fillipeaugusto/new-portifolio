@@ -4,7 +4,7 @@ import Carousel from '../components/Carrousel';
 import Footer from '../components/Footer';
 
 import Header from '../components/Header';
-import Testando from '../components/Testando';
+
 import Teste from '../components/Teste';
 
 import '../styles/globals.css';
@@ -16,7 +16,6 @@ function MyApp({ Component, pageProps }: AppProps) {
 			<div>
 				{/* <Carousel /> */}
 				{/* <Teste /> */}
-				<Testando />
 			</div>
 			<Component {...pageProps} />
 			<Footer />

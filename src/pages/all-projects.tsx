@@ -86,17 +86,14 @@ export default function AllProjects() {
 						</div>
 					</div>
 
-					<div className="flex grid grid-cols-12 pb-10 sm:px-5 gap-x-8 gap-y-16">
+					<div className="flex grid grid-cols-12 pb-10 sm:px-5 gap-x-8 gap-y-16 ">
 						{newProjectData.map((project) => {
 							return (
 								<div
 									className="flex flex-col items-start col-span-12 space-y-3 sm:col-span-6 xl:col-span-4"
 									key={project.id}
 								>
-									<a
-										href={`http://localhost:3000/projects/${project.slug}`}
-										className="block"
-									>
+									<a href={`/projects/${project.slug}`} className="block">
 										<img
 											className="object-cover w-full mb-2 overflow-hidden rounded-lg shadow-sm max-h-56"
 											src={project.cover.src}
