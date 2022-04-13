@@ -1,3 +1,5 @@
+/* eslint-disable @next/next/no-img-element */
+/* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable @next/next/no-html-link-for-pages */
 import Head from 'next/head';
 import React from 'react';
